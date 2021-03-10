@@ -1,0 +1,19 @@
+table{
+    border:"black 5px solid";
+}
+
+.vacio{
+    background-color:gray;
+}
+
+.clasePP{
+    background-color:red;
+}
+
+.clase{
+    background-color:green;
+}
+
+tr{
+    background-color: purple;
+}
