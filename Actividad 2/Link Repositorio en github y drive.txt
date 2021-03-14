@@ -1,4 +1,4 @@
 Repositrio en GIT con la carpeta de la pagina	
-
+https://github.com/josmaot/paradigmasProgramacion/tree/main/Actividad%202
 Repositorio en Drive para la imagen con el resultado (Acceso solo con correo universitario -@uach.mx-)
 https://drive.google.com/file/d/1pfR6G63MK3Qqb-ss7OMcqKubMYORxpVL/view?usp=sharing
