@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Actividad 8</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/estilosPersonalizados.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="https://uach.mx/">
+                    <img  width="100" height="100" src="assets/img/logoUACH.png" alt="logoUACH">
+                </a>
+                <h1>Proyecto Primer Parcial</h1>
+                <a class="navbar-brand js-scroll-trigger" href="http://fing.uach.mx/">
+                    <img  width="190" height="140" src="assets/img//logoFing.png" alt="logoUACH">
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">JOSMAOT</h1>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="foco">          
+            <h3 id="reloj" class="text-white mb-4" ></h3>
+            <table class="table table-striped" style="background-color: gray;" >
+                <thead>
+                    <tr>
+                        <th>Mesa 1</th>
+                        <th>Mesa 2</th>
+                        <th>Mesa 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img id="mesa1" onclick="cambiarMesa('1')" src="assets/img/billarOff.png" alt="imgBillar">
+                            <h4>Hora Inicio: </h4>
+                            <h5 id="horaInicio1"></h5>
+                            <h4>Hora Final:  </h4>
+                            <h5 id="horaFin1"></h5>
+                            <h4>Total a pagar: </h4>
+                            <h5 id="total1"></h5>
+                        </td>
+                        <td>
+                            <img id="mesa2" onclick="cambiarMesa('2')" src="assets/img/billarOff.png" alt="imgBillar">
+                            <h4>Hora Inicio: </h4>
+                            <h5 id="horaInicio2"></h5>
+                            <h4>Hora Final:  </h4>
+                            <h5 id="horaFin2"></h5>
+                            <h4>Total a pagar: </h4>
+                            <h5 id="total2"></h5>
+                        </td>
+                        <td>
+                            <img id="mesa3" onclick="cambiarMesa('3')" src="assets/img/billarOff.png" alt="imgBillar">
+                            <h4>Hora Inicio: </h4>
+                            <h5 id="horaInicio3"></h5>
+                            <h4>Hora Final:  </h4>
+                            <h5 id="horaFin3"></h5>
+                            <h4>Total a pagar: </h4>
+                            <h5 id="total3"></h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Mesa 4</th>
+                        <th>Mesa 5</th>
+                        <th>Mesa 6</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img id="mesa4" onclick="cambiarMesa('4')" src="assets/img/billarOff.png" alt="imgBillar">
+                            <h4>Hora Inicio: </h4>
+                            <h5 id="horaInicio4"></h5>
+                            <h4>Hora Final:  </h4>
+                            <h5 id="horaFin4"></h5>
+                            <h4>Total a pagar: </h4>
+                            <h5 id="total4"></h5>
+                        </td>
+                        <td>
+                            <img id="mesa5" onclick="cambiarMesa('5')" src="assets/img/billarOff.png" alt="imgBillar">
+                            <h4>Hora Inicio: </h4>
+                            <h5 id="horaInicio5"></h5>
+                            <h4>Hora Final:  </h4>
+                            <h5 id="horaFin5"></h5>
+                            <h4>Total a pagar: </h4>
+                            <h5 id="total5"></h5>
+                        </td>
+                        <td>
+                            <img id="mesa6" onclick="cambiarMesa('6')" src="assets/img/billarOff.png" alt="imgBillar">
+                            <h4>Hora Inicio: </h4>
+                            <h5 id="horaInicio6"></h5>
+                            <h4>Hora Final:  </h4>
+                            <h5 id="horaFin6"></h5>
+                            <h4>Total a pagar: </h4>
+                            <h5 id="total6"></h5>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="about-section text-center" id="contacto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-30 mx-auto">
+                        <h2 class="text-white mb-4">Informacion De contacto</h2>
+                        <p class="text-white-50">
+                            Jose Manuel Olague Trevizo
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Your Website 2020</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="js/myScript.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
