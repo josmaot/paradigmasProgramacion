@@ -26,7 +26,10 @@
                 <a class="navbar-brand js-scroll-trigger" href="http://fing.uach.mx/">
                     <img  width="190" height="140" src="../images/logoFing.png" alt="logoUACH">
                 </a>
-                
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">JavaScript</a></li>
@@ -51,9 +54,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-30 mx-auto">
-                        <h1 class="mx-auto my-0 text-white">Escribe aqui tu texto</h1>
-                        <input type="text" name="cadena" id="cadena">
-                        <a onclick="invertirTexto()" style="background-color: gray;" class="btn btn-primary js-scroll-trigger" href="#about">invertir</a>
+                        <h2 class="text-white mb-4">Escribe el texto aqui</h2>
+                        <input id="textoAInvertir" type="text">
+                        <button onclick="invertirTexto()" style="background-color: grey;" class="btn btn-primary">Invertir texto</button>
                     </div>
                 </div>
             </div>

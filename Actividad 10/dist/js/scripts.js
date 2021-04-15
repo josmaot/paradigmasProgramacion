@@ -56,7 +56,7 @@
 })(jQuery); // End of use strict
 
 
- function invertirTexto(){
-     const cadena = document.getElementById("cadena");
-     alert(cadena.value.split("").reverse().join(""));
- }
+function invertirTexto(){
+    const texto = document.getElementById("textoAInvertir");
+    alert(texto);
+}
