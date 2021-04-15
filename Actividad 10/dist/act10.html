@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Horario</title>
+        <title>Arreglos</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -54,10 +54,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-30 mx-auto">
-                        <h2 class="text-white mb-4">Escribe el texto aqui</h2>
-                        <input id="textoAInvertir" type="text">
-                        <button onclick="invertirTexto()" style="background-color: grey;" class="btn btn-primary">Invertir texto</button>
+                        <h2 class="text-white mb-4">Escribe el nuevo nombre aqui</h2>
+                        <input id="nuevoNombre" type="text" required>
+                        <button onclick="agregarNombre()" style="background-color: grey;" class="btn btn-primary">Agregar Nombre</button>
+                        <p id="mostrar" class="text-white">
+                        </p>
                     </div>
+                    
                 </div>
             </div>
         </section>

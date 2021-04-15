@@ -55,8 +55,15 @@
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
 
+var listaNombres = [];
 
-function invertirTexto(){
-    const texto = document.getElementById("textoAInvertir");
-    alert(texto);
+agregarNombre = () => {
+    var nombre = document.getElementById("nuevoNombre").value;
+    if(nombre!="")
+        listaNombres.push(nombre);
+    
+    document.getElementById("nuevoNombre").value = "";
+    document.getElementById("mostrar").innerHTML = listaNombres;//JSON.stringify(listaNombres);
+    //alert(listaNombres);
+    //console.log(listaNombres);
 }
