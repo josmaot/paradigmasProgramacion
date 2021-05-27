@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a href="index.html">Volver</a>
+    <h1 id = "titulo"></h1>
+    <img src="" id="imagen">
+
+    <script>
+        const urlLocal= new URL(window.location.href);
+        const search_params = urlLocal.searchParams;
+        const id = search_params.get('id');
+
+        const url = `https://jsonplaceholder.typicode.com/photos/${id}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(post => {
+                    document.getElementById("titulo").innerHTML = post.title;
+                    document.getElementById("imagen").src = post.thumbnailUrl;
+                })
+
+
+    </script>
+  </body>
+</html>
