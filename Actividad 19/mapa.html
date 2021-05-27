@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">    
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <!--Estilos para css llamando a el archivo en la carpeta -->
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilosSensores.css">
+
+        <title>mapa</title>
+    </head>
+    <body>
+        <!--Inicio del menu-->
+          
+        <div class="container">
+            <br>
+            <br>
+            <header>
+                <nav class="navbar navbar-inverse">
+                    <div class="conteiner-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+                                <span class="sr-only">Smart House</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="index.html" class="navbar-brand" id="navbar-1">Tester</a>
+                        </div>
+                        <div class="colapse navbar-collapse" id="navbar-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html"><span class="icon-feather"></span>  Resumen</a></li>
+                                <li class="active"><a href="mapa.html"><span class="icon-map"></span>  Mapa</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <!--Final del menu-->
+        <br>
+        <br>
+
+        <div id="app" class="contenedor">
+            <h4>MAPA</h4>
+            <div class="contenedor"></div>
+            <img src="img/mapa.png" alt="" width="350" height="500">
+            <div class="contenedor"></div><div class="contenedor"></div><div class="contenedor"></div><div class="contenedor"></div>
+            <div class="contenedor"></div><div class="contenedor"></div><div class="contenedor"></div><div class="contenedor"></div>
+            
+            <table>
+                <h4>Controles de luz</h4>
+                <tr>
+                    <td><foco lugar = "cocina"></foco> </td>
+                    <td><foco lugar = "comedor"></foco></td>
+                </tr>
+                <tr>
+                    <td><foco lugar = "bano"></foco></td>
+                    <td><foco lugar = "sala"></foco></td>
+                </tr>
+                
+          </table>
+        </div>
+
+        <!--Estilos para javaScript llamando a jquerty desde su pagina y a el archivo en la carpeta local -->
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Iniciamos el servicio de firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDJtTcuOSeIp4cY9P-n-eYQ-bvBZvnlPEU",
+            authDomain: "smarthouse-907ab.firebaseapp.com",
+            databaseURL: "https://smarthouse-907ab-default-rtdb.firebaseio.com",
+            projectId: "smarthouse-907ab",
+            storageBucket: "smarthouse-907ab.appspot.com",
+            messagingSenderId: "700858060032",
+            appId: "1:700858060032:web:2a50651448ab83358d77e5"
+        };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+        <!--llamamos nuestra libreria personal de javaScript y de vue-->
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="jsfunction/mapa.js"></script>
+    </body>
+</html>

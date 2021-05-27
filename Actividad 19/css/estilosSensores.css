@@ -1,0 +1,133 @@
+* {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #FFF;
+    font-size: 50px;
+    text-shadow: 1px 1px 7px rgba(150, 150, 150, 1);
+}
+
+h2 {
+    text-align: center;
+    color: #FFF;
+    font-size: 45px;
+    text-shadow: 1px 1px 7px rgba(150, 150, 150, 1);
+}
+.contenedor {
+    max-width: 1200px;
+    height:500;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: "img/mapaSeg.png";
+    position: relative;
+}
+
+.bild {
+    position:absolute;
+    display:none;
+    width:1000px;
+    height:735px;
+}
+  
+.bg {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: -99;
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;  
+    z-index: -999;
+}
+
+.mapa{
+    text-align: center;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.mapaSeg{
+    text-align: center;
+    margin-right:auto;
+    margin-left:auto;
+    color: rgba(183, 66, 230, 0.575)
+}
+
+
+.cuadro{
+    border: 15px outset #d544fa80;
+    background-image: "img/mapaSeg.png";
+    text-align: center;
+    max-width: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+/* segmentos */
+.segmentos {
+    text-align: center;
+    margin-right:auto;
+    margin-left:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-image: url('mapaOFF3.png');*/
+}
+
+
+.cocina{
+    height: 163px;
+    width: 189px;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 0%;
+    
+    background-image: url('cocina5.png');
+    visibility: hidden;
+   
+
+}
+.comedor{
+    height: 163px;
+    width: 198px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-image: url('comedor2.png');
+    visibility: hidden;
+    padding-top: 5%;
+
+    
+}
+.sala{
+    height: 338px;
+    width: 186px;
+    background-image: url('bano4.png');
+    visibility: hidden;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.bano{
+    height: 338px;
+    margin-top: 1000;
+    width: 186px;
+    background-image: url('sala3.png');
+    
+    background-position: top;
+    background-repeat: no-repeat;
+    visibility: hidden;
+    width: 186px;
+}
+
+
+
+
+
+
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; } 
